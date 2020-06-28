@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+*{
+    font-family:Audiowide;
+}
+::-webkit-scrollbar{
+    width:0px;
+    height:0%;
+}
+/*::-webkit-scrollbar-track{
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(0,0,0);
+    border-radius:10px;
+}*/
+
+.head{
+    position:relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background: crimson;
+    /*border-radius: 10px 10px 0 0;*/
+}
+.head .app{
+    position:absolute;
+    right:30px;
+    color:white;
+}
+.head .name{
+    position:absolute;
+    font-size:25px;
+    left:35%;
+    width:30%;
+    bottom:0;
+    background:rgb(0,0,50);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height:30px;
+    color:white;
+    text-align:center;
+}
+
+.choices{
+    display:none;
+    overflow:scroll;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    height:auto;
+    max-height:80px;
+    background:rgb(255,215,0);
+    color:black;
+    width:80%;
+    left:10%;
+    top:45px;
+    z-index:999;
+    position:absolute;
+    text-align:center;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.yr{
+    width:100%;
+    padding:5px;
+}
+.yr:hover{
+    background:black;
+    color:white;
+}
+.ch{
+    position:absolute;
+    background:#008800;
+    color:white;
+    width:100%;
+    height:25px;
+    font-size:20px;
+    text-align:center;
+    border-radius:20px;
+    /*z-index:1;*/
+}
+.ch:hover{
+    color:black;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    transition-duration:0.5s;
+}
+.year,.year1{
+    position:absolute;
+    width:40%;
+    top:40%;
+}
+.year2,.year3{
+    position:absolute;
+    width:40%;
+    top:40%;
+}
+.year,.year2{
+    left:2.5%;
+}
+.year1,.year3{
+    right:2.5%;
+}
+
+.lst_y{
+    position:relative;
+    left:30%;
+    width:40%;
+    background:red;
+    color:white;
+    font-weight:bold;
+    border-top-right-radius:30px;
+    border-top-left-radius:30px;
+    text-align:center;
+    font-size:15px;
+    height:20px;
+}
+
+.team_sel,.toss_choice{
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    height:550px;
+    width:50%;
+    position:absolute;
+    left:25%;
+    /*margin-left:350px;*/
+    margin-top:20px;
+    border-radius:25px;
+    overflow-y:scroll;
+    background:linear-gradient(rgba(200,200,200,0.5),rgba(200,200,200,1.0));
+    /*text-align:center;*/
+}
+
+.fb1{
+    outline:none;
+    border:none;
+    position:absolute;
+    top:70%;
+    width:30%;
+    left:35%;
+    background:rgb(0,0,60);
+    color:white;
+    font-weight:bold;
+    border-radius:20px;
+    height:30px;
+    font-size:18px;
+}
+
+.team_sel .team1,.team_sel .team2{
+    overflow-y:scroll;
+    position:absolute;
+    top:5%;
+    height:90%;
+    background:rgb(0,0,50);
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius:20px;
+    width:40%;
+    color:white;
+}
+.team_sel .team1{
+    left:5%;
+}
+.team_sel .team2{
+    right:5%;
+}
+.te1,.te2{
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+    /*width:100%;*/
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:white;
+    height:30px;
+    color:black;
+}
+
+.player{
+    /*margin-top:10px;*/
+    position:relative;
+    width:100%;
+    padding:6px;
+    /*height:15px;*/
+}
+.player:hover{
+    background:rgb(0,0,0);
+    height:20px;
+    transition-duration:0.3s;
+}
+
+.btn,.btn1,.btn2{
+    position:absolute;
+    top:50%;
+    height:30%;
+    left:75%;
+    font-weight:bold;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    background-color:rgb(0,0,100);
+    color:white;
+    outline:none;
+    border:none;
+    font-size:15px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.btn:hover,.btn1:hover,.btn2:hover{
+    color:white;
+    background:rgb(0,0,150);
+    transition:0.5s;
+}
+
+.team3,.team4{
+    overflow-y:scroll;
+    position:relative;
+    top:5%;
+    height:40%;
+    left:10%;
+    background:rgb(0,0,50);
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius:20px;
+    width:80%;
+    color:white;
+}
+
